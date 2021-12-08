@@ -1,212 +1,208 @@
 {
-  "kuesioner": [
+  "pertanyaan_saringan": [
     {
-      "Pertanyaan Saringan": [
-        {
-          "kode": "AQ1",
-          "pertanyaan": "Responden yang menjawab?",
-          "pilihan": ["Lansia sendiri", "Responden proksi"],
-          "tipe": "radio",
-          "visible": true
-        },
-        {
-          "kode": "AQ2",
-          "pertanyaan": "Alasan menggunakan responden proksi, karena lansia :",
-          "pilihan": [
-            "Dirawat atau dalam institusi karena mempunyai gangguan psikologis seperti demensia/pikun",
-            "Dirawat atau dalam institusi karena sebab kesehatan lain",
-            "Gangguan psikologis seperti kehilangan memori, bingung atau kehilangan kesadaran, demensia/pikun, dll",
-            "Alasan kesehatan berhubungan dengan COVID-19",
-            "Alasan kesehatan lain",
-            "Kesulitan pendengaran",
-            "Kesulitan berbicara"
-          ],
-          "tipe": "radio",
-          "visible": {
-            "kode": "AQ1",
-            "jawaban": "Responden proksi"
-          }
-        },
-        {
-          "kode": "AQ3",
-          "pertanyaan": "Nama Responden Proksi :",
-          "pilihan": [],
-          "tipe": "input",
-          "visible": {
-            "kode": "AQ1",
-            "jawaban": "Responden proksi"
-          }
-        },
-        {
-          "kode": "AQ4",
-          "pertanyaan": "Hubungan dengan responden lansia :",
-          "pilihan": [
-            "Pasangan",
-            "Anak laki-laki",
-            "Anak perempuan",
-            "Menantu laki-laki",
-            "Menantu perempuan",
-            "Cucu laki-laki",
-            "Cucu perempuan",
-            "Kerabat lain",
-            "Lainnya, sebutkan"
-          ],
-          "tipe": "radio & input",
-          "visible": {
-            "kode": "AQ1",
-            "jawaban": "Responden proksi"
-          }
-        }
+      "kode": "AQ1",
+      "pertanyaan": "Responden yang menjawab?",
+      "pilihan": ["Lansia sendiri", "Responden proksi"],
+      "tipe": "radio",
+      "visible": true
+    },
+    {
+      "kode": "AQ2",
+      "pertanyaan": "Alasan menggunakan responden proksi, karena lansia :",
+      "pilihan": [
+        "Dirawat atau dalam institusi karena mempunyai gangguan psikologis seperti demensia/pikun",
+        "Dirawat atau dalam institusi karena sebab kesehatan lain",
+        "Gangguan psikologis seperti kehilangan memori, bingung atau kehilangan kesadaran, demensia/pikun, dll",
+        "Alasan kesehatan berhubungan dengan COVID-19",
+        "Alasan kesehatan lain",
+        "Kesulitan pendengaran",
+        "Kesulitan berbicara"
       ],
-      "Seksi Demografi": [
-        {
-          "kode": "BQ5",
-          "pertanyaan": "NIK",
-          "pilihan": [],
-          "tipe": "input",
-          "visible": true
-        },
-        {
-          "kode": "BQ1",
-          "pertanyaan": "Nama",
-          "pilihan": [],
-          "tipe": "input",
-          "visible": true
-        },
-        {
-          "kode": "BQ2",
-          "pertanyaan": "Tanggal Lahir",
-          "pilihan": [],
-          "tipe": "date",
-          "visible": true
-        },
-        {
-          "kode": "BQ3",
-          "pertanyaan": "Umur",
-          "pilihan": [],
-          "tipe": "input",
-          "visible": true
-        },
-        {
-          "kode": "BQ4",
-          "pertanyaan": "Jenis Kelamin",
-          "pilihan": [],
-          "tipe": "input",
-          "visible": true
-        },
-        {
-          "kode": "BQ6",
-          "pertanyaan": "Nomor telepon (HP)",
-          "pilihan": [],
-          "tipe": "input",
-          "visible": true
-        },
-        {
-          "kode": "BQ7",
-          "pertanyaan": "Agama",
-          "pilihan": [
-            "Islam",
-            "Kristen",
-            "Katholik",
-            "Hindu",
-            "Budha",
-            "Kong Hu Chu"
-          ],
-          "tipe": "radio",
-          "visible": true
-        },
-        {
-          "kode": "BQ8",
-          "pertanyaan": "Pendidikan",
-          "pilihan": ["SD", "SMP", "SMA", "PERGURUAN TINGGI", "TIDAK SEKOLAH"],
-          "tipe": "radio",
-          "visible": true
-        },
-        {
-          "kode": "BQ9",
-          "pertanyaan": "Status Perkawinan",
-          "pilihan": ["Kawin", "Cerai Hidup", "Cerai Mati", "Belum Kawin"],
-          "tipe": "radio",
-          "visible": true
-        },
-        {
-          "kode": "BQ10",
-          "pertanyaan": "Alamat",
-          "pilihan": [],
-          "tipe": "input",
-          "visible": true
-        },
-        {
-          "kode": "BQ11",
-          "pertanyaan": "Provinsi",
-          "pilihan": [],
-          "tipe": "select provinsi",
-          "visible": true
-        },
-        {
-          "kode": "BQ12",
-          "pertanyaan": "Kota",
-          "pilihan": [],
-          "tipe": "select kota",
-          "visible": true
-        },
-        {
-          "kode": "BQ13",
-          "pertanyaan": "Kecamatan",
-          "pilihan": [],
-          "tipe": "select kecamatan",
-          "visible": true
-        },
-        {
-          "kode": "BQ14",
-          "pertanyaan": "Kelurahan",
-          "pilihan": [],
-          "tipe": "select kelurahan",
-          "visible": true
-        },
-        {
-          "kode": "BQ15",
-          "pertanyaan": "Kepemilikan Rumah",
-          "pilihan": ["Milik Sendiri", "Kontrak", "Lainnya"],
-          "tipe": "radio",
-          "visible": true
-        },
-        {
-          "kode": "BQ16",
-          "pertanyaan": "Jumlah anggota keluarga",
-          "pilihan": [],
-          "tipe": "input angka",
-          "visible": true
-        },
-        {
-          "kode": "BQ17",
-          "pertanyaan": "Pengaturan tempat tinggal",
-          "pilihan": [
-            "Tinggal Sendiri",
-            "Bersama Pasangan",
-            "Bersama Keluarga",
-            "Bersama Tiga Generasi",
-            "Lainnya, sebutkan"
-          ],
-          "tipe": "radio & input",
-          "visible": true
-        },
-        {
-          "kode": "BQ18",
-          "pertanyaan": "Hubungan dengan kepala rumah tangga",
-          "pilihan": [
-            "Kepala Rumah Tangga (KRT)",
-            "Istri / Suami",
-            "Anak Kandung / Tiri",
-            "Anak Anggkat",
-            "Menantu",
-            "Cucu",
-            "Orang Tua / Mertua"
-          ],
-          "tipe": "radio",
-          "visible": true
-        }
-      ]
+      "tipe": "radio",
+      "visible": {
+        "kode": "AQ1",
+        "jawaban": "Responden proksi"
+      }
+    },
+    {
+      "kode": "AQ3",
+      "pertanyaan": "Nama Responden Proksi :",
+      "pilihan": [],
+      "tipe": "input",
+      "visible": {
+        "kode": "AQ1",
+        "jawaban": "Responden proksi"
+      }
+    },
+    {
+      "kode": "AQ4",
+      "pertanyaan": "Hubungan dengan responden lansia :",
+      "pilihan": [
+        "Pasangan",
+        "Anak laki-laki",
+        "Anak perempuan",
+        "Menantu laki-laki",
+        "Menantu perempuan",
+        "Cucu laki-laki",
+        "Cucu perempuan",
+        "Kerabat lain",
+        "Lainnya, sebutkan"
+      ],
+      "tipe": "radio & input",
+      "visible": {
+        "kode": "AQ1",
+        "jawaban": "Responden proksi"
+      }
+    }
+  ],
+  "seksi_demografi": [
+    {
+      "kode": "BQ5",
+      "pertanyaan": "NIK",
+      "pilihan": [],
+      "tipe": "input",
+      "visible": true
+    },
+    {
+      "kode": "BQ1",
+      "pertanyaan": "Nama",
+      "pilihan": [],
+      "tipe": "input",
+      "visible": true
+    },
+    {
+      "kode": "BQ2",
+      "pertanyaan": "Tanggal Lahir",
+      "pilihan": [],
+      "tipe": "date",
+      "visible": true
+    },
+    {
+      "kode": "BQ3",
+      "pertanyaan": "Umur",
+      "pilihan": [],
+      "tipe": "input",
+      "visible": true
+    },
+    {
+      "kode": "BQ4",
+      "pertanyaan": "Jenis Kelamin",
+      "pilihan": [],
+      "tipe": "input",
+      "visible": true
+    },
+    {
+      "kode": "BQ6",
+      "pertanyaan": "Nomor telepon (HP)",
+      "pilihan": [],
+      "tipe": "input",
+      "visible": true
+    },
+    {
+      "kode": "BQ7",
+      "pertanyaan": "Agama",
+      "pilihan": [
+        "Islam",
+        "Kristen",
+        "Katholik",
+        "Hindu",
+        "Budha",
+        "Kong Hu Chu"
+      ],
+      "tipe": "radio",
+      "visible": true
+    },
+    {
+      "kode": "BQ8",
+      "pertanyaan": "Pendidikan",
+      "pilihan": ["SD", "SMP", "SMA", "PERGURUAN TINGGI", "TIDAK SEKOLAH"],
+      "tipe": "radio",
+      "visible": true
+    },
+    {
+      "kode": "BQ9",
+      "pertanyaan": "Status Perkawinan",
+      "pilihan": ["Kawin", "Cerai Hidup", "Cerai Mati", "Belum Kawin"],
+      "tipe": "radio",
+      "visible": true
+    },
+    {
+      "kode": "BQ10",
+      "pertanyaan": "Alamat",
+      "pilihan": [],
+      "tipe": "input",
+      "visible": true
+    },
+    {
+      "kode": "BQ11",
+      "pertanyaan": "Provinsi",
+      "pilihan": [],
+      "tipe": "select provinsi",
+      "visible": true
+    },
+    {
+      "kode": "BQ12",
+      "pertanyaan": "Kota",
+      "pilihan": [],
+      "tipe": "select kota",
+      "visible": true
+    },
+    {
+      "kode": "BQ13",
+      "pertanyaan": "Kecamatan",
+      "pilihan": [],
+      "tipe": "select kecamatan",
+      "visible": true
+    },
+    {
+      "kode": "BQ14",
+      "pertanyaan": "Kelurahan",
+      "pilihan": [],
+      "tipe": "select kelurahan",
+      "visible": true
+    },
+    {
+      "kode": "BQ15",
+      "pertanyaan": "Kepemilikan Rumah",
+      "pilihan": ["Milik Sendiri", "Kontrak", "Lainnya"],
+      "tipe": "radio",
+      "visible": true
+    },
+    {
+      "kode": "BQ16",
+      "pertanyaan": "Jumlah anggota keluarga",
+      "pilihan": [],
+      "tipe": "input angka",
+      "visible": true
+    },
+    {
+      "kode": "BQ17",
+      "pertanyaan": "Pengaturan tempat tinggal",
+      "pilihan": [
+        "Tinggal Sendiri",
+        "Bersama Pasangan",
+        "Bersama Keluarga",
+        "Bersama Tiga Generasi",
+        "Lainnya, sebutkan"
+      ],
+      "tipe": "radio & input",
+      "visible": true
+    },
+    {
+      "kode": "BQ18",
+      "pertanyaan": "Hubungan dengan kepala rumah tangga",
+      "pilihan": [
+        "Kepala Rumah Tangga (KRT)",
+        "Istri / Suami",
+        "Anak Kandung / Tiri",
+        "Anak Anggkat",
+        "Menantu",
+        "Cucu",
+        "Orang Tua / Mertua"
+      ],
+      "tipe": "radio",
+      "visible": true
     }
   ]
 }
