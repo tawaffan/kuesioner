@@ -2,6 +2,7 @@
   "kuesioner": [
     {
       "kelompok": "Pertanyaan Saringan",
+      "slug": "pertanyaan_saringan",
       "items": [
         {
           "kode": "AQ1",
@@ -62,6 +63,7 @@
     },
     {
       "kelompok": "Seksi Demografi",
+      "slug": "seksi_demografi",
       "items": [
         {
           "kode": "BQ5",
