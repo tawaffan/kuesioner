@@ -1,7 +1,7 @@
 {
   "kuesioner": [
     {
-      "kelompok": "Pertanyaan Saringan",
+      "group": "Pertanyaan Saringan",
       "slug": "pertanyaan_saringan",
       "items": [
         {
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "kelompok": "Seksi Demografi",
+      "group": "Seksi Demografi",
       "slug": "seksi_demografi",
       "items": [
         {
