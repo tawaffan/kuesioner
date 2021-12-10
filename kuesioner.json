@@ -96,8 +96,8 @@
         {
           "kode": "BQ4",
           "pertanyaan": "Jenis Kelamin",
-          "pilihan": [],
-          "tipe": "input",
+          "pilihan": ["Laki-laki", "Perempuan"],
+          "tipe": "radio",
           "visible": true
         },
         {
