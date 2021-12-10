@@ -110,14 +110,7 @@
         {
           "kode": "BQ7",
           "pertanyaan": "Agama",
-          "pilihan": [
-            "Islam",
-            "Kristen",
-            "Katholik",
-            "Hindu",
-            "Budha",
-            "Kong Hu Chu"
-          ],
+          "pilihan": ["Islam", "Kristen", "Katholik", "Hindu", "Budha", "Kong Hu Chu"],
           "tipe": "radio",
           "visible": true
         },
@@ -209,6 +202,188 @@
             "Cucu",
             "Orang Tua / Mertua"
           ],
+          "tipe": "radio",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "group": "Bagian Terkait COVID-19",
+      "slug": "bagian_covid",
+      "items": [
+        {
+          "kode": "CQ1",
+          "pertanyaan": "Apakah Bapak / Ibu (lansia) sudah divaksin?",
+          "pilihan": [
+            "Ya, vaksin pertama kali",
+            "Ya, sudah vaksin dua kali",
+            "Ya, sudah menerima vaksin booster",
+            "Rencana akan vaksinasi pertama",
+            "Rencana akan vaksinasi kedua",
+            "Rencana akan vaksinasi ketiga (booster)",
+            "Tidak divaksin"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "CQ2",
+          "pertanyaan": "Kenapa Bapak / Ibu (lansia) belum divaksin?",
+          "pilihan": [
+            "Menunggu giliran jadwal divaksin",
+            "Tidak punya alat transportasi ke tempat vaksinasi",
+            "Tidak punya ongkos ke tempat vaksinasi",
+            "Tidak ada orang yang menemani",
+            "Tidak tahu bahwa vaksinasi itu perlu",
+            "Vaksinasi tidak tersedia di wilayah tempat tinggal",
+            "Tidak bersedia divaksin",
+            "Kondisi kesehatan tidak memungkinkan divaksin",
+            "Sudah terinfeksi"
+          ],
+          "tipe": "radio",
+          "visible": {
+            "kode": "CQ1",
+            "jawaban": "Tidak divaksin"
+          }
+        },
+        {
+          "kode": "CQ3",
+          "pertanyaan": "Apakah Bapak / Ibu (lansia) terinfeksi COVID-19?",
+          "pilihan": ["Ya, tanpa gejala", "Ya, tidak dirawat", "Ya, dirawat", "Tidak"],
+          "tipe": "radio",
+          "visible": {
+            "kode": "CQ2",
+            "jawaban": "Sudah terinfeksi"
+          }
+        },
+        {
+          "kode": "CQ4",
+          "pertanyaan": "Berapa lama Bapak / Ibu (lansia) sakit karena COVID-19?",
+          "pilihan": [],
+          "tipe": "input",
+          "visible": [
+            { "kode": "CQ3", "jawaban": "Ya, tanpa gejala" },
+            { "kode": "CQ3", "jawaban": "Ya, tidak dirawat" },
+            { "kode": "CQ3", "jawaban": "Ya, dirawat" }
+          ]
+        },
+        {
+          "kode": "CQ5a",
+          "pertanyaan": "Apakah ada anggota keluarga (yang tinggal serumah) terinfeksi COVID-19? (jawaban bisa lebih dari satu)",
+          "pilihan": [
+            "Pasangan",
+            "Anak laki-laki",
+            "Anak perempuan",
+            "Menantu laki-laki",
+            "Menantu perempuan",
+            "Cucu",
+            "Kerabat termasuk saudara dari lansia",
+            "Tidak"
+          ],
+          "tipe": "checkbox",
+          "visible": true
+        },
+        {
+          "kode": "CQ5b",
+          "pertanyaan": "Apakah ada anggota keluarga (yang tinggal beda rumah) terinfeksi COVID-19? (jawaban bisa lebih dari satu)",
+          "pilihan": [
+            "Pasangan",
+            "Anak laki-laki",
+            "Anak perempuan",
+            "Menantu laki-laki",
+            "Menantu perempuan",
+            "Cucu",
+            "Kerabat termasuk saudara dari lansia",
+            "Tidak"
+          ],
+          "tipe": "checkbox",
+          "visible": true
+        },
+        {
+          "kode": "CQ5c",
+          "pertanyaan": "Apakah ada teman atau tetangga dari lansia yang terinfeksi COVID-19? (jawaban bisa lebih dari satu)",
+          "pilihan": ["Ya, teman", "Ya, tetangga", "Tidak"],
+          "tipe": "checkbox",
+          "visible": true
+        },
+        {
+          "kode": "CQ6a",
+          "pertanyaan": "Apakah ada anggota keluarga (yang tinggal serumah), meninggal akibat COVID-19? (jawaban bisa lebih dari satu)",
+          "pilihan": [
+            "Pasangan",
+            "Anak laki-laki",
+            "Anak perempuan",
+            "Menantu laki-laki",
+            "Menantu perempuan",
+            "Cucu",
+            "Kerabat termasuk saudara dari lansia",
+            "Tidak"
+          ],
+          "tipe": "checkbox",
+          "visible": true
+        },
+        {
+          "kode": "CQ6b",
+          "pertanyaan": "Apakah ada anggota keluarga (yang tinggal beda rumah), meninggal karena COVID-19? (jawaban bisa lebih dari satu)",
+          "pilihan": [
+            "Pasangan",
+            "Anak laki-laki",
+            "Anak perempuan",
+            "Menantu laki-laki",
+            "Menantu perempuan",
+            "Cucu",
+            "Kerabat termasuk saudara dari lansia",
+            "Tidak"
+          ],
+          "tipe": "checkbox",
+          "visible": true
+        },
+        {
+          "kode": "CQ6c",
+          "pertanyaan": "Apakah ada teman atau tetangga yang meninggal akibat COVID-19? (jawaban bisa lebih dari satu)",
+          "pilihan": ["Ya, teman", "Ya, tetangga", "Tidak"],
+          "tipe": "checkbox",
+          "visible": true
+        },
+        {
+          "kode": "CQ7",
+          "pertanyaan": "Setelah pemerintah mengumumkan protokol kesehatan terhadap COVID-19 seberapa patuh Bapak/Ibu (lansia) untuk mengikuti protokol tersebut",
+          "pilihan": ["Sangat patuh", "Patuh", "Cukup patuh", "Kurang patuh", "Tidak patuh"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "CQ7a",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) memakai masker ketika keluar rumah?",
+          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "CQ7b",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) tetap menjaga jarak dalam keramaian?",
+          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "CQ7c",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) tetap tinggal di rumah, dan hanya  keluar bila ada hal yang mendesak?",
+          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "CQ7d",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) menghindari kerumunan orang?",
+          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "CQ7e",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mencuci tangan dengan sabun setelah pulang ke rumah?",
+          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
           "tipe": "radio",
           "visible": true
         }
