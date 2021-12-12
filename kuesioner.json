@@ -388,6 +388,567 @@
           "visible": true
         }
       ]
+    },
+    {
+      "group": "Kesehatan",
+      "slug": "kesehatan",
+      "items": [
+        {
+          "kode": "DQ1",
+          "pertanyaan": "Secara umum bagaimana kondisi kesehatan Bapak/Ibu (lansia)?",
+          "pilihan": ["Sangat sehat", "Cukup sehat", "Agak kurang sehat", "Tidak sehat"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ2",
+          "pertanyaan": "Bagaimana kesehatan Bapak/Ibu (lansia) sebelum pandemi?",
+          "pilihan": ["Sangat sehat", "Cukup sehat", "Agak kurang sehat", "Tidak sehat"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ3",
+          "pertanyaan": "Apakah dokter/paramedis/perawat/bidan pernah mengatakan bahwa Bapak/Ibu (lansia) menderita […]",
+          "pilihan": [
+            "Penyakit jantung",
+            "Tekanan darah tinggi",
+            "Strok",
+            "Diabetes",
+            "Kanker",
+            "Penyakit paru",
+            "Penyakit ginjal",
+            "Dimensia/pikun"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4a",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami kesulitan/gangguan penglihatan meksipun dengan memakai kacamata?",
+          "pilihan": [
+            "Ya, sama sekali tidak bisa melihat",
+            "Ya, banyak kesulitan",
+            "Ya, sedikit kesulitan",
+            "Tidak mengalami kesulitan"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4a_s",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan kesulitan/gangguan penglihatan selama pandemi?",
+          "pilihan": ["Ya, memburuk", "Ya, membaik", "Tidak ada perubahan"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4b",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mempunyai kesulitan/gangguan pendengaran walaupun menggunakan alat bantu?",
+          "pilihan": [
+            "Ya, sama sekali tidak bisa mendengar",
+            "Ya, banyak kesulitan",
+            "Ya, sedikit kesulitan",
+            "Tidak mengalami kesulitan"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4b_s",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan kesulitan/gangguan pendengaran selama pandemi?",
+          "pilihan": ["Ya, memburuk", "Ya, membaik", "Tidak ada perubahan"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4c",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mempunyai kesulitan/gangguan berjalan atau naik tangga?",
+          "pilihan": [
+            "Ya, sama sekali tidak bisa berjalan atau naik tangga",
+            "Ya, banyak kesulitan",
+            "Ya, sedikit kesulitan",
+            "Tidak mengalami kesulitan"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4c_s",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan kesulitan/gangguan berjalan atau naik tangga selama pandemi?",
+          "pilihan": ["Ya, memburuk", "Ya, membaik", "Tidak ada perubahan"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4d",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami kesulitan/gangguan dalam hal mengingat atau berkonsentrasi?",
+          "pilihan": [
+            "Ya, selalu mengalami kesulitan",
+            "Ya sering kali mengalami kesulitan",
+            "Ya, sedikit mengalami kesulitan",
+            "Tidak mengalami kesulitan"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4d_s",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan kesulitan/gangguan mengingat atau berkonsentrasi selama pandemi?",
+          "pilihan": ["Ya, memburuk", "Ya, membaik", "Tidak ada perubahan"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4e",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan kesulitan/gangguan mengingat atau berkonsentrasi selama pandemi?",
+          "pilihan": [
+            "Ya, sama sekali tidak bisa mengurus diri sendiri",
+            "Ya, banyak/seringkali mengalami kesulitan",
+            "Ya, sedikit mengalami kesulitan",
+            "Tidak mengalami kesulitan"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4e_s",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan dalam hal kesulitan/gangguan untuk mengurus diri sendiri selama pandemi?",
+          "pilihan": ["Ya, memburuk", "Ya, membaik", "Tidak ada perubahan"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4f",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan dalam hal kesulitan/gangguan untuk mengurus diri sendiri selama pandemi?",
+          "pilihan": [
+            "Ya, sama sekali tidak bisa memahami/dipahami/berkomunikasi",
+            "Ya, banyak mengalami kesulitan",
+            "Ya, sedikit mengalami kesulitan",
+            "Tidak mengalami kesulitan"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ4_s1",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami kesulitan/gangguan berbicara dan atau memahami/berkomunikasi dengan orang lain?",
+          "pilihan": ["Ya, memburuk", "Ya, membaik", "Tidak ada perubahan"],
+          "tipe": "radio",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "group": "Penggunaan Layanan Kesehatan",
+      "slug": "penggunaan_layanan_kesehatan",
+      "items": [
+        {
+          "kode": "EQ1",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan dalam layanan kesehatan selama pandemi?",
+          "pilihan": [
+            "Ya, penundaan atau pembatalan layanan kesehatan esensial (layanan esensial (layanan yang harus tersedia temasuk rujukan dan kedaruratan) yang diperlukan",
+            "Ya, penundaan atau pembatalan layanan kesehatan nonesensial (layanan yang tidak bersifat kedaruratan atau mengancam jiwa, misal untuk keperluan estetika/kecantikan) yang diperlukan",
+            "Ya, penundaan atau pembatalan layanan kesehatan primer yang mengutamakan upaya preventif dan dilakukan oleh tenaga kesehatan (puskesmas, klinik, dan Upaya Kesehatan Bersumberdaya Masyarakat/UKBM)",
+            "Tidak memerlukan layanan"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "EQ2",
+          "pertanyaan": "Apabila Bapak/Ibu (lansia) minum obat untuk alasan kesehatan, apakah mudah memperolehnya selama pandemi?",
+          "pilihan": ["Ya", "Tidak", "Tidak ada akses sama sekali sejak sebelum pandemi"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "EQ3",
+          "pertanyaan": "Apakah kondisi kesehatan Bapak/Ibu (lansia) memburuk karena tidak dapat mengunjungi tenaga kesehatan selama pandemi?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "EQ4",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) biasa memperoleh bantuan untuk melakukan kegiatan sehari-hari (seperti mempersiapkan makanan, obat-obatan atau berbelanja) di rumah?",
+          "pilihan": [
+            "Tidak",
+            "Ya, dibantu keluarga, teman, tetangga atau relawan (kader) yang tidak dibayar",
+            "Ya, dibantu keluarga, teman, tetangga atau relawan (kader) yang dibayar",
+            "Ya, dibantu pendamping lansia profesional dibayar",
+            "Ya, lainnya sebutkan"
+          ],
+          "tipe": "radio & input",
+          "visible": true
+        },
+        {
+          "kode": "EQ5",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) memiliki asuransi kesehatan?",
+          "pilihan": [
+            "Ya, saya memiliki asuransi BPJS PBI/Jamkesda/Jamkesmas/KIS (iuran ditanggung pemerintah dan diperuntukkan bagi masyarakat miskin dan tidak mampu)",
+            "Ya, saya memiliki asuransi BPJS Non PBI (peserta jaminan Kartu BPJS dengan cara mendaftarkan sendiri-sendiri ataupun kolektif dengan pembiayaan premi secara mandiri",
+            "Ya, saya memiliki asuransi kesehatan swasta (peserta jaminan kartu asuransi kesehatan lainnya di luar Program BPJS, yang diterima dari mendaftarkan sendiri- sendiri ataupun kolektif dengan pembiayaan premi secara mandiri)",
+            "Tidak memiliki (tidak memiliki jaminan kesehatan apapun, baik yang dimiliki secara gratis maupun dengan membayar/mendaftar secara mandiri)"
+          ],
+          "tipe": "radio",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "group": "Kesehatan Jiwa",
+      "slug": "kesehatan_jiwa",
+      "items": [
+        {
+          "kode": "FQ6_1",
+          "pertanyaan": "Apakah anda pada dasarnya puas dengan kehidupan anda?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_2",
+          "pertanyaan": "Apakah anda sudah meninggalkan banyak kegiatan dan minat/kesenangan anda?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_3",
+          "pertanyaan": "Apakah anda merasa kehidupan anda hampa?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_4",
+          "pertanyaan": "Apakah anda sering merasa bosan?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_5",
+          "pertanyaan": "Apakah anda bersemangat setiap saat?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_6",
+          "pertanyaan": "Apakah anda takut sesuatu yang buruk akan terjadi pada anda?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_7",
+          "pertanyaan": "Apakah anda merasa bahagia pada sebagian besar hidup anda?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_8",
+          "pertanyaan": "Apakah anda sering merasa tidak berdaya?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_9",
+          "pertanyaan": "Apakah anda lebih senang tinggal di rumah daripada pergi ke luar dan mengerjakan sesuatu hal yang baru?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_10",
+          "pertanyaan": "Apakah anda merasa mempunyai banyak masalah dengan daya ingat anda dibandingkan kebanyakan orang?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_11",
+          "pertanyaan": "Apakah menurut Anda, hidup anda sekarang ini menyenangkan?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_12",
+          "pertanyaan": "Apakah anda merasa tidak berharga seperti perasaan anda saat ini?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_13",
+          "pertanyaan": "Apakah anda merasa penuh semangat?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_14",
+          "pertanyaan": "Apakah anda merasa bahwa keadaan anda tidak ada harapan?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "FQ6_15",
+          "pertanyaan": "Apakah anda pikir bahwa orang lain lebih baik keadaanya dari anda?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "group": "Kesehatan Lain",
+      "slug": "kesehatan_lain",
+      "items": [
+        {
+          "kode": "GQ1a",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) pernah jatuh dalam 1 tahun terakhir?",
+          "pilihan": ["Ya, sekali", "Ya, dua kali", "Ya, lebih dari 2 kali", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "GQ1b",
+          "pertanyaan": "Apakah berjalan Bapak/Ibu (lansia) menjadi lebih lambat atau melakukan penyesuaian lain (seperti pegangan pada meja/kursi) karena takut jatuh sewaktu melakukan kegiatan sehari-hari?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "GQ2a",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mempunyai kebiasaan mengunyah tembakau, merokok dengan pipa, merokok batang yang digulung atau rokok biasa?",
+          "pilihan": [
+            "Tidak",
+            "Telah berhenti merokok",
+            "Ya, mengunyah tembakau",
+            "Ya, merokok dengan pipa",
+            "Ya, melinting rokok",
+            "Ya, merokok sigaret/cerutu"
+          ],
+          "tipe": "radio",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "group": "Kondisi Sosial",
+      "slug": "kondisi_sosial",
+      "items": [
+        {
+          "kode": "HQ1a",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) sering merasa kehilangan pertemanan?",
+          "pilihan": ["Tidak pernah", "Kadang-kadang", "Sering"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "HQ1b",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) sering merasa dikucilkan?",
+          "pilihan": ["Tidak pernah", "Kadang-kadang", "Sering"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "HQ1c",
+          "pertanyaan": "Seberapa sering Bapak/Ibu (lansia) merasa terisolasi dari orang lain?",
+          "pilihan": ["Tidak pernah", "Kadang-kadang", "Sering"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "HQ1d",
+          "pertanyaan": "Apa yang dilakukan selama pandemi COVID-19?",
+          "pilihan": [
+            "Tidak ada",
+            "Meluangkan lebih banyak waktu untuk hobi dan aktivitas",
+            "Menonton televisi",
+            "Melakukan aktivitas fisik",
+            "Berbicara dengan teman dekat dan keluarga melalui telepon atau zoom",
+            "Saling mengirimkan pesan tertulis (SMS/WA) kepada teman dekat dan keluarga",
+            "Menggunakan media sosial dan bentuk hiburan lain secara daring",
+            "Lainnya, sebutkan"
+          ],
+          "tipe": "radio & input",
+          "visible": true
+        },
+        {
+          "kode": "HQ2",
+          "pertanyaan": "Bandingkan dengan sebelum pandemi COVID-19, seberapa sering Bapak/Ibu berinteraksi dengan teman dekat dan keluarga?",
+          "pilihan": ["Lebih sering dari sebelumnya", "Sama dengan sebelumnya", "Kurang dari sebelumnya"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "HQ3",
+          "pertanyaan": "Apakah Bapak/Ibu merasa lebih kesepian sejak pandemi COVID-19?",
+          "pilihan": [
+            "Ya, lebih merasa kesepian saat ini",
+            "Ya, merasa kesepian saat ini",
+            "Ya, kadang merasa kesepian",
+            "Tidak, merasa kesepian saat ini",
+            "Tidak tahu"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "HQ4",
+          "pertanyaan": "Siapa yang memberikan dukungan sosial kepada Bapak/Ibu (lansia) selama pandemi COVID-19? (jawaban bisa lebih dari satu)",
+          "pilihan": [
+            "Anggota keluarga",
+            "Kader",
+            "Pendamping khusus lansia",
+            "Tidak mempunyai dukungan sosial",
+            "Lainnya, sebutkan"
+          ],
+          "tipe": "checkbox & input",
+          "visible": true
+        },
+        {
+          "kode": "HQ5",
+          "pertanyaan": "Apabila Bapak/Ibu (lansia) menggunakan alat komunikasi untuk menghubungi teman atau keluarga, alat apa yang digunakan?",
+          "pilihan": [
+            "Telepon rumah",
+            "Ponsel",
+            "Komputer / laptop",
+            "Tidak menggunakan alat teknologi",
+            "Lainnya, sebutkan"
+          ],
+          "tipe": "radio & input",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "group": "Kondisi Ekonomi Sejak Maret 2020 - saat wawancara",
+      "slug": "kondisi_ekonomi",
+      "items": [
+        {
+          "kode": "IQ1",
+          "pertanyaan": "Apa status pekerjaan Bapak/Ibu (lansia) sebelum pandemi COVID-19?",
+          "pilihan": [
+            "Berusaha sendiri",
+            "Berusaha dibantu buruh tidak tetap / buruh tidak dibayar",
+            "Berusaha dibantu butuh tetap / buruh dibayar",
+            "Buruh / karyawan / pegawai",
+            "Pekerja bebas",
+            "Pekerja keluarga atau tidak dibayar",
+            "Saya tidak bekerja karena sudah lama menderita penyakit, trauma atau disabilitas",
+            "Saya tidak bekerja (tidak mencari pekerjaan dan tidak bersedia untuk bekerja)",
+            "Saya tidak bekerja tapi sedang mencari pekerjaan dan bersedia bekerja",
+            "Saya sudah tidak bekerja / pensiun",
+            "Lainnya, sebutkan"
+          ],
+          "tipe": "radio & input",
+          "visibale": true
+        },
+        {
+          "kode": "IQ2",
+          "pertanyaan": "Sejak pandemi COVID-19 apakah jam kerja Bapak/Ibu (lansia) berkurang?",
+          "pilihan": [
+            "Meningkat",
+            "Tidak berubah",
+            "Menurun tapi tidak kehilangan pekerjaan",
+            "Saya kehilangan pekerjaan / PHK",
+            "Saya pensiun sejak pandemi COVID-19",
+            "Saya tidak tahu"
+          ],
+          "tipe": "radio",
+          "visibale": true
+        },
+        {
+          "kode": "IQ3a",
+          "pertanyaan": "Penghasilan dari pekerjaan yang dibayar",
+          "pilihan": [
+            "Mingkat",
+            "Tidak berubah",
+            "Menurun",
+            "Tidak mempunyai sumber penghasilan dari pekerjaan yang dibayar"
+          ],
+          "tipe": "radio",
+          "visibale": true
+        },
+        {
+          "kode": "IQ3b",
+          "pertanyaan": "Uang atau barang yang diterima dari saudara / teman (yang tinggal beda rumah, misal di kota / kabupaten lain)",
+          "pilihan": [
+            "Meningkat",
+            "Tidak berubah",
+            "Menurun",
+            "Tidak mempunyai sumber penerimaan uang atau barang dari saudara / teman (yang tinggal beda rumah, misal di kota/kabupaten lain)"
+          ],
+          "tipe": "radio",
+          "visibale": true
+        },
+        {
+          "kode": "IQ3c",
+          "pertanyaan": "Uang atau barang yang diterima dari saudara / teman yang tinggal di luar negeri",
+          "pilihan": [
+            "Meningkat",
+            "Tidak berubah",
+            "Menurun",
+            "Tidak mempunyai sumber penerimaan uang atau barang dari saudara / teman yang tinggal di luar negeri"
+          ],
+          "tipe": "radio",
+          "visibale": true
+        },
+        {
+          "kode": "IQ3d",
+          "pertanyaan": "Dukungan berupa uang atau barang selama pandemi dari pemerintah",
+          "pilihan": [
+            "Meningkat",
+            "Tidak berubah",
+            "Menurun",
+            "Tidak mempunyai dukungan berupa uang atau barang dari pemerintah"
+          ],
+          "tipe": "radio",
+          "visibale": true
+        },
+        {
+          "kode": "IQ3e",
+          "pertanyaan": "Dukungan berupa uang atau barang selama pandemi dari organisasi non-pemerintah atau organisasi kemanusiaan",
+          "pilihan": [
+            "Meningkat",
+            "Tidak berubah",
+            "Menurun",
+            "Tidak mempunyai dukungan berupa uang atau barang dari organisasi non-pemerintah"
+          ],
+          "tipe": "radio",
+          "visibale": true
+        },
+        {
+          "kode": "IQ4a",
+          "pertanyaan": "Sulit bagi saya dan keluarga untuk membiayai pengeluaran kebutuhan dasar (sandang, pangan, keperluan kebersihan)",
+          "pilihan": ["Ya", "Mungkin", "Tidak"],
+          "tipe": "radio",
+          "visibale": true
+        },
+        {
+          "kode": "IQ4b",
+          "pertanyaan": "Sulit bagi saya dan keluarga untuk membayar sewa rumah dan tagihan bulanan",
+          "pilihan": ["Ya", "Mungkin", "Tidak"],
+          "tipe": "radio",
+          "visibale": true
+        },
+        {
+          "kode": "IQ5a",
+          "pertanyaan": "Pada saat ini apakah Bapak/Ibu (lansia) memerlukan bantuan untuk menjalani kehidupan seperti sebelum pandemi COVID-19",
+          "pilihan": ["Bantuan keuangan", "Obat-obatan", "Layanan kesehatan", "Bantuan emosional", "Lainnya, sebutkan"],
+          "tipe": "radio & input",
+          "visibale": true
+        }
+      ]
     }
   ]
 }
