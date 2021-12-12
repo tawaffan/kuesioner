@@ -851,7 +851,7 @@
             "Lainnya, sebutkan"
           ],
           "tipe": "radio & input",
-          "visibale": true
+          "visible": true
         },
         {
           "kode": "IQ2",
@@ -865,7 +865,7 @@
             "Saya tidak tahu"
           ],
           "tipe": "radio",
-          "visibale": true
+          "visible": true
         },
         {
           "kode": "IQ3a",
@@ -877,7 +877,7 @@
             "Tidak mempunyai sumber penghasilan dari pekerjaan yang dibayar"
           ],
           "tipe": "radio",
-          "visibale": true
+          "visible": true
         },
         {
           "kode": "IQ3b",
@@ -889,7 +889,7 @@
             "Tidak mempunyai sumber penerimaan uang atau barang dari saudara / teman (yang tinggal beda rumah, misal di kota/kabupaten lain)"
           ],
           "tipe": "radio",
-          "visibale": true
+          "visible": true
         },
         {
           "kode": "IQ3c",
@@ -901,7 +901,7 @@
             "Tidak mempunyai sumber penerimaan uang atau barang dari saudara / teman yang tinggal di luar negeri"
           ],
           "tipe": "radio",
-          "visibale": true
+          "visible": true
         },
         {
           "kode": "IQ3d",
@@ -913,7 +913,7 @@
             "Tidak mempunyai dukungan berupa uang atau barang dari pemerintah"
           ],
           "tipe": "radio",
-          "visibale": true
+          "visible": true
         },
         {
           "kode": "IQ3e",
@@ -925,28 +925,28 @@
             "Tidak mempunyai dukungan berupa uang atau barang dari organisasi non-pemerintah"
           ],
           "tipe": "radio",
-          "visibale": true
+          "visible": true
         },
         {
           "kode": "IQ4a",
           "pertanyaan": "Sulit bagi saya dan keluarga untuk membiayai pengeluaran kebutuhan dasar (sandang, pangan, keperluan kebersihan)",
           "pilihan": ["Ya", "Mungkin", "Tidak"],
           "tipe": "radio",
-          "visibale": true
+          "visible": true
         },
         {
           "kode": "IQ4b",
           "pertanyaan": "Sulit bagi saya dan keluarga untuk membayar sewa rumah dan tagihan bulanan",
           "pilihan": ["Ya", "Mungkin", "Tidak"],
           "tipe": "radio",
-          "visibale": true
+          "visible": true
         },
         {
           "kode": "IQ5a",
           "pertanyaan": "Pada saat ini apakah Bapak/Ibu (lansia) memerlukan bantuan untuk menjalani kehidupan seperti sebelum pandemi COVID-19",
           "pilihan": ["Bantuan keuangan", "Obat-obatan", "Layanan kesehatan", "Bantuan emosional", "Lainnya, sebutkan"],
           "tipe": "radio & input",
-          "visibale": true
+          "visible": true
         }
       ]
     },
