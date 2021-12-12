@@ -949,6 +949,51 @@
           "visibale": true
         }
       ]
+    },
+    {
+      "group": "Observari kader terhadap responden pasca wawancara",
+      "slug": "observari_responden",
+      "items": [
+        {
+          "kode": "OQ1",
+          "pertanyaan": "Apakah anda merasa bahwa responden cukup kompeten secara mental untuk memberikan jawaban?",
+          "pilihan": ["Ya", "Agak", "Tidak juga", "Tidak", "Tidak yakin"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "OQ2",
+          "pertanyaan": "Apakah anda merasa bahwa tanggapan responden sebagian besar akurat?",
+          "pilihan": ["Ya", "Agak", "Tidak juga", "Tidak", "Tidak yakin"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "OQ3",
+          "pertanyaan": "Apakah anda merasa responden mengerti pertanyaan yang diajukan?",
+          "pilihan": ["Ya", "Agak", "Tidak juga", "Tidak", "Tidak yakin"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "OQ4",
+          "pertanyaan": "Apakah anda merasa responden menanggapi dengan baik dan menikmati wawancara?",
+          "pilihan": ["Ya", "Agak", "Tidak juga", "Tidak", "Tidak yakin"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "OQ5",
+          "pertanyaan": "Apakah anda mengalami kesulitan mewawancarai responden yang mempunyai gangguan pendengaran?",
+          "pilihan": [
+            "Tidak",
+            "Ya, tetapi gangguan pendengaran tidak mempengaruhi wawancara",
+            "Ya, gangguan pendengaran mempengaruhi wawancara"
+          ],
+          "tipe": "radio",
+          "visible": true
+        }
+      ]
     }
   ]
 }
