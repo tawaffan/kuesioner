@@ -947,6 +947,13 @@
           "pilihan": ["Bantuan keuangan", "Obat-obatan", "Layanan kesehatan", "Bantuan emosional", "Lainnya, sebutkan"],
           "tipe": "radio & input",
           "visible": true
+        },
+        {
+          "kode": "IQ5b",
+          "pertanyaan": "Bantuan seperti apa yang paling mendesak Bapak/Ibu (lansia) butuhkan?",
+          "pilihan": ["Bantuan keuangan", "Obat-obatan", "Layanan kesehatan", "Bantuan emosional", "Lainnya, sebutkan"],
+          "tipe": "radio & input",
+          "visible": true
         }
       ]
     },
