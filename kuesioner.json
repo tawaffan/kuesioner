@@ -1,6 +1,19 @@
 {
   "kuesioner": [
     {
+      "group": "Kebersediaan",
+      "slug": "kebersediaan",
+      "items": [
+        {
+          "kode": "A99",
+          "pertanyaan": "Apakah responden bersedia untuk disurvery?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        }
+      ]
+    },
+    {
       "group": "Pertanyaan Saringan",
       "slug": "pertanyaan_saringan",
       "items": [
