@@ -5,7 +5,7 @@
       "slug": "kebersediaan",
       "items": [
         {
-          "kode": "A99",
+          "kode": "kebersediaan",
           "pertanyaan": "Apakah responden bersedia untuk disurvery?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
