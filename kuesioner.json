@@ -2,7 +2,7 @@
   "kuesioner": [
     {
       "group": "Kebersediaan",
-      "slug": "kebersediaan",
+      "form": "formKebersediaan",
       "items": [
         {
           "kode": "kebersediaan",
@@ -15,7 +15,7 @@
     },
     {
       "group": "Pertanyaan Saringan",
-      "slug": "pertanyaan_saringan",
+      "form": "formPertanyaanSaringan",
       "items": [
         {
           "kode": "AQ1",
@@ -76,7 +76,7 @@
     },
     {
       "group": "Seksi Demografi",
-      "slug": "seksi_demografi",
+      "form": "formDemografi",
       "items": [
         {
           "kode": "BQ5",
@@ -222,7 +222,7 @@
     },
     {
       "group": "Bagian Terkait COVID-19",
-      "slug": "bagian_covid",
+      "form": "formCovid",
       "items": [
         {
           "kode": "CQ1",
@@ -404,7 +404,7 @@
     },
     {
       "group": "Kesehatan",
-      "slug": "kesehatan",
+      "form": "formKesehatan",
       "items": [
         {
           "kode": "DQ1",
@@ -554,7 +554,7 @@
     },
     {
       "group": "Penggunaan Layanan Kesehatan",
-      "slug": "penggunaan_layanan_kesehatan",
+      "form": "formLayananKesehatan",
       "items": [
         {
           "kode": "EQ1",
@@ -611,7 +611,7 @@
     },
     {
       "group": "Kesehatan Jiwa",
-      "slug": "kesehatan_jiwa",
+      "form": "formKesehatanJiwa",
       "items": [
         {
           "kode": "FQ6_1",
@@ -722,7 +722,7 @@
     },
     {
       "group": "Kesehatan Lain",
-      "slug": "kesehatan_lain",
+      "form": "formKesehatanLain",
       "items": [
         {
           "kode": "GQ1a",
@@ -756,7 +756,7 @@
     },
     {
       "group": "Kondisi Sosial",
-      "slug": "kondisi_sosial",
+      "form": "formKondisiSosial",
       "items": [
         {
           "kode": "HQ1a",
@@ -845,7 +845,7 @@
     },
     {
       "group": "Kondisi Ekonomi Sejak Maret 2020 - saat wawancara",
-      "slug": "kondisi_ekonomi",
+      "form": "formKondisiEkonomi",
       "items": [
         {
           "kode": "IQ1",
@@ -972,7 +972,7 @@
     },
     {
       "group": "Observari kader terhadap responden pasca wawancara",
-      "slug": "observari_responden",
+      "form": "formObservasiResponden",
       "items": [
         {
           "kode": "OQ1",
