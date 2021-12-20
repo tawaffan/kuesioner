@@ -79,13 +79,6 @@
       "form": "formDemografi",
       "items": [
         {
-          "kode": "BQ5",
-          "pertanyaan": "NIK",
-          "pilihan": [],
-          "tipe": "input",
-          "visible": true
-        },
-        {
           "kode": "BQ1",
           "pertanyaan": "Nama",
           "pilihan": [],
@@ -114,6 +107,13 @@
           "visible": true
         },
         {
+          "kode": "BQ5",
+          "pertanyaan": "NIK",
+          "pilihan": [],
+          "tipe": "input",
+          "visible": true
+        },
+        {
           "kode": "BQ6",
           "pertanyaan": "Nomor telepon (HP)",
           "pilihan": [],
@@ -123,7 +123,14 @@
         {
           "kode": "BQ7",
           "pertanyaan": "Agama",
-          "pilihan": ["Islam", "Kristen", "Katholik", "Hindu", "Budha", "Kong Hu Chu"],
+          "pilihan": [
+            "Islam",
+            "Kristen",
+            "Katholik",
+            "Hindu",
+            "Budha",
+            "Kong Hu Chu"
+          ],
           "tipe": "radio",
           "visible": true
         },
@@ -192,15 +199,14 @@
         },
         {
           "kode": "BQ17",
-          "pertanyaan": "Pengaturan tempat tinggal",
+          "pertanyaan": "Bapak/Ibu (lansia) tinggal bersama (jawaban bisa lebih dari satu)",
           "pilihan": [
             "Tinggal Sendiri",
-            "Bersama Pasangan",
-            "Bersama Keluarga",
-            "Bersama Tiga Generasi",
-            "Lainnya, sebutkan"
+            "Tiga generasi (Anak kandung/tiri/menantu dan cucu, atau Orang tua/mertua dan anak kandung/tiri/menantu)",
+            "Pembantu/sopir",
+            "Lainnya (kerabat lain (adik, kakak, bibi, paman), orang yang tidak ada hubungan keluarga dengan KRT)"
           ],
-          "tipe": "radio & input",
+          "tipe": "checkbox",
           "visible": true
         },
         {
@@ -210,7 +216,7 @@
             "Kepala Rumah Tangga (KRT)",
             "Istri / Suami",
             "Anak Kandung / Tiri",
-            "Anak Anggkat",
+            "Anak Angkat",
             "Menantu",
             "Cucu",
             "Orang Tua / Mertua"
@@ -262,7 +268,12 @@
         {
           "kode": "CQ3",
           "pertanyaan": "Apakah Bapak / Ibu (lansia) terinfeksi COVID-19?",
-          "pilihan": ["Ya, tanpa gejala", "Ya, tidak dirawat", "Ya, dirawat", "Tidak"],
+          "pilihan": [
+            "Ya, tanpa gejala",
+            "Ya, tidak dirawat",
+            "Ya, dirawat",
+            "Tidak"
+          ],
           "tipe": "radio",
           "visible": {
             "kode": "CQ2",
@@ -323,13 +334,13 @@
           "kode": "CQ6a",
           "pertanyaan": "Apakah ada anggota keluarga (yang tinggal serumah), meninggal akibat COVID-19? (jawaban bisa lebih dari satu)",
           "pilihan": [
-            "Pasangan",
-            "Anak laki-laki",
-            "Anak perempuan",
-            "Menantu laki-laki",
-            "Menantu perempuan",
-            "Cucu",
-            "Kerabat termasuk saudara dari lansia",
+            "Ya, Pasangan",
+            "Ya, Anak laki-laki",
+            "Ya, Anak perempuan",
+            "Ya, Menantu laki-laki",
+            "Ya, Menantu perempuan",
+            "Ya, Cucu",
+            "Ya, Kerabat termasuk saudara dari lansia",
             "Tidak"
           ],
           "tipe": "checkbox",
@@ -339,13 +350,13 @@
           "kode": "CQ6b",
           "pertanyaan": "Apakah ada anggota keluarga (yang tinggal beda rumah), meninggal karena COVID-19? (jawaban bisa lebih dari satu)",
           "pilihan": [
-            "Pasangan",
-            "Anak laki-laki",
-            "Anak perempuan",
-            "Menantu laki-laki",
-            "Menantu perempuan",
-            "Cucu",
-            "Kerabat termasuk saudara dari lansia",
+            "Ya, Pasangan",
+            "Ya, Anak laki-laki",
+            "Ya, Anak perempuan",
+            "Ya, Menantu laki-laki",
+            "Ya, Menantu perempuan",
+            "Ya, Cucu",
+            "Ya, Kerabat termasuk saudara dari lansia",
             "Tidak"
           ],
           "tipe": "checkbox",
@@ -361,42 +372,73 @@
         {
           "kode": "CQ7",
           "pertanyaan": "Setelah pemerintah mengumumkan protokol kesehatan terhadap COVID-19 seberapa patuh Bapak/Ibu (lansia) untuk mengikuti protokol tersebut",
-          "pilihan": ["Sangat patuh", "Patuh", "Cukup patuh", "Kurang patuh", "Tidak patuh"],
+          "pilihan": [
+            "Sangat patuh",
+            "Patuh",
+            "Cukup patuh",
+            "Kurang patuh",
+            "Tidak patuh"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "CQ7a",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) memakai masker ketika keluar rumah?",
-          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
+          "pilihan": [
+            "Ya, selalu",
+            "Ya, kadang-kadang",
+            "Ya, tapi jarang",
+            "Tidak sama sekali"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "CQ7b",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) tetap menjaga jarak dalam keramaian?",
-          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
+          "pilihan": [
+            "Ya, selalu",
+            "Ya, kadang-kadang",
+            "Ya, tapi jarang",
+            "Tidak sama sekali"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "CQ7c",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) tetap tinggal di rumah, dan hanya  keluar bila ada hal yang mendesak?",
-          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
+          "pilihan": [
+            "Ya, selalu",
+            "Ya, kadang-kadang",
+            "Ya, tapi jarang",
+            "Tidak sama sekali"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "CQ7d",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) menghindari kerumunan orang?",
-          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
+          "pilihan": [
+            "Ya, selalu",
+            "Ya, kadang-kadang",
+            "Ya, tapi jarang",
+            "Tidak sama sekali"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "CQ7e",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) mencuci tangan dengan sabun setelah pulang ke rumah?",
-          "pilihan": ["Ya, selalu", "Ya, kadang-kadang", "Ya, tapi jarang", "Tidak sama sekali"],
+          "pilihan": [
+            "Ya, selalu",
+            "Ya, kadang-kadang",
+            "Ya, tapi jarang",
+            "Tidak sama sekali"
+          ],
           "tipe": "radio",
           "visible": true
         }
@@ -409,30 +451,87 @@
         {
           "kode": "DQ1",
           "pertanyaan": "Secara umum bagaimana kondisi kesehatan Bapak/Ibu (lansia)?",
-          "pilihan": ["Sangat sehat", "Cukup sehat", "Agak kurang sehat", "Tidak sehat"],
+          "pilihan": [
+            "Sangat sehat",
+            "Cukup sehat",
+            "Agak kurang sehat",
+            "Tidak sehat"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "DQ2",
           "pertanyaan": "Bagaimana kesehatan Bapak/Ibu (lansia) sebelum pandemi?",
-          "pilihan": ["Sangat sehat", "Cukup sehat", "Agak kurang sehat", "Tidak sehat"],
+          "pilihan": [
+            "Sangat sehat",
+            "Cukup sehat",
+            "Agak kurang sehat",
+            "Tidak sehat"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "DQ3",
           "pertanyaan": "Apakah dokter/paramedis/perawat/bidan pernah mengatakan bahwa Bapak/Ibu (lansia) menderita […]",
-          "pilihan": [
-            "Penyakit jantung",
-            "Tekanan darah tinggi",
-            "Strok",
-            "Diabetes",
-            "Kanker",
-            "Penyakit paru",
-            "Penyakit ginjal",
-            "Dimensia/pikun"
-          ],
+          "pilihan": [],
+          "tipe": "header",
+          "visible": true
+        },
+        {
+          "kode": "DQ3_1",
+          "pertanyaan": "Penyakit jantung",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ3_2",
+          "pertanyaan": "Tekanan darah tinggi",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ3_3",
+          "pertanyaan": "Strok",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ3_4",
+          "pertanyaan": "Diabetes",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ3_5",
+          "pertanyaan": "Kanker",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ3_6",
+          "pertanyaan": "Penyakit paru",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ3_7",
+          "pertanyaan": "Penyakit ginjal",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ3_8",
+          "pertanyaan": "Dimensia/pikun",
+          "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
@@ -514,7 +613,7 @@
         },
         {
           "kode": "DQ4e",
-          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan kesulitan/gangguan mengingat atau berkonsentrasi selama pandemi?",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami kesulitan/gangguan untuk mengurus diri sendiri (seperti mandi, makan, berpakaian, buang air besar, buang air kecil)?",
           "pilihan": [
             "Ya, sama sekali tidak bisa mengurus diri sendiri",
             "Ya, banyak/seringkali mengalami kesulitan",
@@ -533,7 +632,7 @@
         },
         {
           "kode": "DQ4f",
-          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan dalam hal kesulitan/gangguan untuk mengurus diri sendiri selama pandemi?",
+          "pertanyaan": "Dengan menggunakan bahasa sehari-hari, apakah Bapak/Ibu (lansia) mengalami kesulitan/gangguan berbicara dan atau memahami/berkomunikasi dengan orang lain?",
           "pilihan": [
             "Ya, sama sekali tidak bisa memahami/dipahami/berkomunikasi",
             "Ya, banyak mengalami kesulitan",
@@ -571,7 +670,11 @@
         {
           "kode": "EQ2",
           "pertanyaan": "Apabila Bapak/Ibu (lansia) minum obat untuk alasan kesehatan, apakah mudah memperolehnya selama pandemi?",
-          "pilihan": ["Ya", "Tidak", "Tidak ada akses sama sekali sejak sebelum pandemi"],
+          "pilihan": [
+            "Ya",
+            "Tidak",
+            "Tidak ada akses sama sekali sejak sebelum pandemi"
+          ],
           "tipe": "radio",
           "visible": true
         },
@@ -586,11 +689,11 @@
           "kode": "EQ4",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) biasa memperoleh bantuan untuk melakukan kegiatan sehari-hari (seperti mempersiapkan makanan, obat-obatan atau berbelanja) di rumah?",
           "pilihan": [
-            "Tidak",
             "Ya, dibantu keluarga, teman, tetangga atau relawan (kader) yang tidak dibayar",
             "Ya, dibantu keluarga, teman, tetangga atau relawan (kader) yang dibayar",
             "Ya, dibantu pendamping lansia profesional dibayar",
-            "Ya, lainnya sebutkan"
+            "Ya, lainnya sebutkan",
+            "Tidak"
           ],
           "tipe": "radio & input",
           "visible": true
@@ -727,12 +830,37 @@
         {
           "kode": "GQ1a",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) pernah jatuh dalam 1 tahun terakhir?",
-          "pilihan": ["Ya, sekali", "Ya, dua kali", "Ya, lebih dari 2 kali", "Tidak"],
+          "pilihan": [
+            "Ya, sekali",
+            "Ya, dua kali",
+            "Ya, lebih dari 2 kali",
+            "Tidak"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "GQ1b",
+          "pertanyaan": "Jika Ya, apakah mengalami cidera?",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
+          "visible": [
+            {
+              "kode": "GQ1a",
+              "jawaban": "Ya, sekali"
+            },
+            {
+              "kode": "GQ1a",
+              "jawaban": "Ya, dua kali"
+            },
+            {
+              "kode": "GQ1a",
+              "jawaban": "Ya, lebih dari 2 kali"
+            }
+          ]
+        },
+        {
+          "kode": "GQ1c",
           "pertanyaan": "Apakah berjalan Bapak/Ibu (lansia) menjadi lebih lambat atau melakukan penyesuaian lain (seperti pegangan pada meja/kursi) karena takut jatuh sewaktu melakukan kegiatan sehari-hari?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
@@ -783,14 +911,14 @@
           "kode": "HQ1d",
           "pertanyaan": "Apa yang dilakukan selama pandemi COVID-19?",
           "pilihan": [
-            "Tidak ada",
             "Meluangkan lebih banyak waktu untuk hobi dan aktivitas",
             "Menonton televisi",
             "Melakukan aktivitas fisik",
             "Berbicara dengan teman dekat dan keluarga melalui telepon atau zoom",
             "Saling mengirimkan pesan tertulis (SMS/WA) kepada teman dekat dan keluarga",
             "Menggunakan media sosial dan bentuk hiburan lain secara daring",
-            "Lainnya, sebutkan"
+            "Lainnya, sebutkan",
+            "Tidak ada"
           ],
           "tipe": "radio & input",
           "visible": true
@@ -798,7 +926,11 @@
         {
           "kode": "HQ2",
           "pertanyaan": "Bandingkan dengan sebelum pandemi COVID-19, seberapa sering Bapak/Ibu berinteraksi dengan teman dekat dan keluarga?",
-          "pilihan": ["Lebih sering dari sebelumnya", "Sama dengan sebelumnya", "Kurang dari sebelumnya"],
+          "pilihan": [
+            "Lebih sering dari sebelumnya",
+            "Sama dengan sebelumnya",
+            "Kurang dari sebelumnya"
+          ],
           "tipe": "radio",
           "visible": true
         },
@@ -884,7 +1016,7 @@
           "kode": "IQ3a",
           "pertanyaan": "Penghasilan dari pekerjaan yang dibayar",
           "pilihan": [
-            "Mingkat",
+            "Meningkat",
             "Tidak berubah",
             "Menurun",
             "Tidak mempunyai sumber penghasilan dari pekerjaan yang dibayar"
@@ -894,7 +1026,7 @@
         },
         {
           "kode": "IQ3b",
-          "pertanyaan": "Uang atau barang yang diterima dari saudara / teman (yang tinggal beda rumah, misal di kota / kabupaten lain)",
+          "pertanyaan": "Uang atau barang (sembako atau barang untuk memenuhi kebutuhan dasar) yang diterima dari saudara/teman (yang tinggal beda rumah)",
           "pilihan": [
             "Meningkat",
             "Tidak berubah",
@@ -906,7 +1038,7 @@
         },
         {
           "kode": "IQ3c",
-          "pertanyaan": "Uang atau barang yang diterima dari saudara / teman yang tinggal di luar negeri",
+          "pertanyaan": "Uang atau barang (sembako atau barang untuk memenuhi kebutuhan dasar) yang diterima dari saudara/teman yang tinggal di luar negeri",
           "pilihan": [
             "Meningkat",
             "Tidak berubah",
@@ -918,7 +1050,7 @@
         },
         {
           "kode": "IQ3d",
-          "pertanyaan": "Dukungan berupa uang atau barang selama pandemi dari pemerintah",
+          "pertanyaan": "Dukungan  berupa uang atau barang (sembako atau barang untuk memenuhi kebutuhan dasar) selama pandemi dari pemerintah",
           "pilihan": [
             "Meningkat",
             "Tidak berubah",
@@ -930,7 +1062,7 @@
         },
         {
           "kode": "IQ3e",
-          "pertanyaan": "Dukungan berupa uang atau barang selama pandemi dari organisasi non-pemerintah atau organisasi kemanusiaan",
+          "pertanyaan": "Dukungan berupa uang atau barang (sembako atau barang untuk memenuhi kebutuhan dasar)  selama pandemi dari organisasi non-pemerintah atau organisasi kemanusiaan",
           "pilihan": [
             "Meningkat",
             "Tidak berubah",
@@ -942,29 +1074,36 @@
         },
         {
           "kode": "IQ4a",
-          "pertanyaan": "Sulit bagi saya dan keluarga untuk membiayai pengeluaran kebutuhan dasar (sandang, pangan, keperluan kebersihan)",
-          "pilihan": ["Ya", "Mungkin", "Tidak"],
+          "pertanyaan": "Sulit bagi saya dan keluarga untuk membiayai pengeluaran kebutuhan dasar (sandang, pangan, keperluan protokol kesehatan selama masa COVID-19 (masker/sabun cuci tangan/ face shield, hand sanitizer)",
+          "pilihan": ["Ya", "Ragu-ragu", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "IQ4b",
-          "pertanyaan": "Sulit bagi saya dan keluarga untuk membayar sewa rumah dan tagihan bulanan",
-          "pilihan": ["Ya", "Mungkin", "Tidak"],
+          "pertanyaan": "Sulit bagi saya dan keluarga untuk membayar tagihan bulanan (sewa rumah/listrik/air/cicilan, dll)",
+          "pilihan": ["Ya", "Ragu-ragu", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "IQ5a",
           "pertanyaan": "Pada saat ini apakah Bapak/Ibu (lansia) memerlukan bantuan untuk menjalani kehidupan seperti sebelum pandemi COVID-19",
-          "pilihan": ["Bantuan keuangan", "Obat-obatan", "Layanan kesehatan", "Bantuan emosional", "Lainnya, sebutkan"],
-          "tipe": "radio & input",
+          "pilihan": ["Ya", "Tidak"],
+          "tipe": "radio",
           "visible": true
         },
         {
           "kode": "IQ5b",
           "pertanyaan": "Bantuan seperti apa yang paling mendesak Bapak/Ibu (lansia) butuhkan?",
-          "pilihan": ["Bantuan keuangan", "Obat-obatan", "Layanan kesehatan", "Bantuan emosional", "Lainnya, sebutkan"],
+          "pilihan": [
+            "Bantuan keuangan",
+            "Obat-obatan",
+            "Layanan kesehatan",
+            "Bantuan psikologis (konsultasi, curhat, dll)",
+            "Bantuan barang (sembako atau barang untuk memenuhi kebutuhan dasar)",
+            "Lainnya, sebutkan"
+          ],
           "tipe": "radio & input",
           "visible": true
         }
