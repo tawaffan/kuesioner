@@ -1,12 +1,33 @@
 {
   "kuesioner": [
     {
-      "group": "Kebersediaan",
+      "group": "Persetujuan Wawancara",
       "form": "formKebersediaan",
       "items": [
         {
-          "kode": "kebersediaan",
-          "pertanyaan": "Apakah responden bersedia untuk disurvery?",
+          "kode": "Q1",
+          "pertanyaan": "Apakah Bapak / Ibu Lansia ada di rumah?",
+          "pilihan": ["Ya", "Tidak", "Sudah meninggal", "Pindah"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "Q2",
+          "pertanyaan": "Apakah Bapak / Ibu Lansia bersedia diwawancarai?",
+          "pilihan": ["Ya Bersedia", "Tidak"],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "Q3",
+          "pertanyaan": "Alasan tidak bersedia, sebutkan",
+          "pilihan": [],
+          "tipe": "input",
+          "visible": true
+        },
+        {
+          "kode": "Q4",
+          "pertanyaan": "Apakah Bapak / Ibu Lansia meninggal karena COVID-19?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
@@ -56,7 +77,7 @@
           "kode": "AQ4",
           "pertanyaan": "Hubungan dengan responden lansia :",
           "pilihan": [
-            "Pasangan",
+            "Suami / istri",
             "Anak laki-laki",
             "Anak perempuan",
             "Menantu laki-laki",
@@ -75,7 +96,48 @@
       ]
     },
     {
-      "group": "Seksi Demografi",
+      "group": "Keterangan Tempat Tinggal",
+      "form": "formTempatTinggal",
+      "items": [
+        {
+          "kode": "KT1",
+          "pertanyaan": "Provinsi",
+          "pilihan": [],
+          "tipe": "select provinsi",
+          "visible": true
+        },
+        {
+          "kode": "KT2",
+          "pertanyaan": "Kabupaten / Kota",
+          "pilihan": [],
+          "tipe": "select kota",
+          "visible": true
+        },
+        {
+          "kode": "KT3",
+          "pertanyaan": "Kecamatan",
+          "pilihan": [],
+          "tipe": "select kecamatan",
+          "visible": true
+        },
+        {
+          "kode": "KT4",
+          "pertanyaan": "Desa / Kelurahan",
+          "pilihan": [],
+          "tipe": "select kelurahan",
+          "visible": true
+        },
+        {
+          "kode": "KT6",
+          "pertanyaan": "Alamat Lengkap",
+          "pilihan": [],
+          "tipe": "input",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "group": "Keterangan Demografi",
       "form": "formDemografi",
       "items": [
         {
@@ -96,7 +158,7 @@
           "kode": "BQ3",
           "pertanyaan": "Umur",
           "pilihan": [],
-          "tipe": "input",
+          "tipe": "input angka",
           "visible": true
         },
         {
@@ -110,14 +172,14 @@
           "kode": "BQ5",
           "pertanyaan": "NIK",
           "pilihan": [],
-          "tipe": "input",
+          "tipe": "input angka",
           "visible": true
         },
         {
           "kode": "BQ6",
-          "pertanyaan": "Nomor telepon (HP)",
+          "pertanyaan": "Nomor telepon (telepon genggam)",
           "pilihan": [],
-          "tipe": "input",
+          "tipe": "input angka",
           "visible": true
         },
         {
@@ -150,67 +212,37 @@
         },
         {
           "kode": "BQ10",
-          "pertanyaan": "Alamat",
-          "pilihan": [],
-          "tipe": "input",
-          "visible": true
-        },
-        {
-          "kode": "BQ11",
-          "pertanyaan": "Provinsi",
-          "pilihan": [],
-          "tipe": "select provinsi",
-          "visible": true
-        },
-        {
-          "kode": "BQ12",
-          "pertanyaan": "Kota",
-          "pilihan": [],
-          "tipe": "select kota",
-          "visible": true
-        },
-        {
-          "kode": "BQ13",
-          "pertanyaan": "Kecamatan",
-          "pilihan": [],
-          "tipe": "select kecamatan",
-          "visible": true
-        },
-        {
-          "kode": "BQ14",
-          "pertanyaan": "Kelurahan",
-          "pilihan": [],
-          "tipe": "select kelurahan",
-          "visible": true
-        },
-        {
-          "kode": "BQ15",
           "pertanyaan": "Kepemilikan Rumah",
           "pilihan": ["Milik Sendiri", "Kontrak", "Lainnya"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "BQ16",
+          "kode": "BQ11",
           "pertanyaan": "Jumlah anggota keluarga",
           "pilihan": [],
           "tipe": "input angka",
           "visible": true
         },
         {
-          "kode": "BQ17",
-          "pertanyaan": "Bapak/Ibu (lansia) tinggal bersama (jawaban bisa lebih dari satu)",
+          "kode": "BQ12",
+          "pertanyaan": "Bapak/Ibu (lansia) tinggal bersama siapa? (jawaban bisa lebih dari satu)",
           "pilihan": [
-            "Tinggal Sendiri",
-            "Tiga generasi (Anak kandung/tiri/menantu dan cucu, atau Orang tua/mertua dan anak kandung/tiri/menantu)",
-            "Pembantu/sopir",
-            "Lainnya (kerabat lain (adik, kakak, bibi, paman), orang yang tidak ada hubungan keluarga dengan KRT)"
+            "Tinggal sendiri",
+            "Suami / istri",
+            "Anak kandung / anak tiri",
+            "Anak angkat",
+            "Menantu",
+            "Cucu",
+            "Orang tua / mertua",
+            "Pembantu / sopir",
+            "Lainnya (keluarga lain (adik, kakak, bibi, paman), orang yang tidak ada hubungan keluarga dengan KRT)"
           ],
           "tipe": "checkbox",
           "visible": true
         },
         {
-          "kode": "BQ18",
+          "kode": "BQ13",
           "pertanyaan": "Hubungan dengan kepala rumah tangga",
           "pilihan": [
             "Kepala Rumah Tangga (KRT)",
@@ -219,7 +251,9 @@
             "Anak Angkat",
             "Menantu",
             "Cucu",
-            "Orang Tua / Mertua"
+            "Orang Tua / Mertua",
+            "Pembantu / Sopir",
+            "Lainnya (keluarga lain (adik, kakak, bibi, paman), orang yang tidak ada hubungan keluarga dengan KRT)"
           ],
           "tipe": "radio",
           "visible": true
@@ -227,7 +261,7 @@
       ]
     },
     {
-      "group": "Bagian Terkait COVID-19",
+      "group": "Keterangan Terkait COVID-19",
       "form": "formCovid",
       "items": [
         {
@@ -237,9 +271,9 @@
             "Ya, vaksin pertama kali",
             "Ya, sudah vaksin dua kali",
             "Ya, sudah menerima vaksin booster",
+            "Ya, rencana akan vaksinasi kedua",
+            "Ya, rencana akan vaksinasi ketiga (booster)",
             "Rencana akan vaksinasi pertama",
-            "Rencana akan vaksinasi kedua",
-            "Rencana akan vaksinasi ketiga (booster)",
             "Tidak divaksin"
           ],
           "tipe": "radio",
@@ -267,7 +301,7 @@
         },
         {
           "kode": "CQ3",
-          "pertanyaan": "Apakah Bapak / Ibu (lansia) terinfeksi COVID-19?",
+          "pertanyaan": "Apakah Bapak / Ibu (lansia) pernah terinfeksi COVID-19?",
           "pilihan": [
             "Ya, tanpa gejala",
             "Ya, tidak dirawat",
@@ -293,15 +327,16 @@
         },
         {
           "kode": "CQ5a",
-          "pertanyaan": "Apakah ada anggota keluarga (yang tinggal serumah) terinfeksi COVID-19? (jawaban bisa lebih dari satu)",
+          "pertanyaan": "Apakah ada anggota keluarga (yang tinggal serumah) terinfeksi COVID-19? (jawaban YA bisa lebih dari satu)",
           "pilihan": [
-            "Pasangan",
-            "Anak laki-laki",
-            "Anak perempuan",
-            "Menantu laki-laki",
-            "Menantu perempuan",
-            "Cucu",
-            "Kerabat termasuk saudara dari lansia",
+            "Ya, suami/istri",
+            "Ya, orang tua/mertua",
+            "Ya, anak laki-laki",
+            "Ya, anak perempuan",
+            "Ya, menantu laki-laki",
+            "Ya, menantu perempuan",
+            "Ya, cucu",
+            "Ya, kerabat termasuk saudara dari lansia",
             "Tidak"
           ],
           "tipe": "checkbox",
@@ -309,15 +344,16 @@
         },
         {
           "kode": "CQ5b",
-          "pertanyaan": "Apakah ada anggota keluarga (yang tinggal beda rumah) terinfeksi COVID-19? (jawaban bisa lebih dari satu)",
+          "pertanyaan": "Apakah ada anggota keluarga (yang tinggal beda rumah) terinfeksi COVID-19? (jawaban YA bisa lebih dari satu)",
           "pilihan": [
-            "Pasangan",
-            "Anak laki-laki",
-            "Anak perempuan",
-            "Menantu laki-laki",
-            "Menantu perempuan",
-            "Cucu",
-            "Kerabat termasuk saudara dari lansia",
+            "Ya, suami/istri",
+            "Ya, orang tua/mertua",
+            "Ya, anak laki-laki",
+            "Ya, anak perempuan",
+            "Ya, menantu laki-laki",
+            "Ya, menantu perempuan",
+            "Ya, cucu",
+            "Ya, kerabat termasuk saudara dari lansia",
             "Tidak"
           ],
           "tipe": "checkbox",
@@ -334,13 +370,14 @@
           "kode": "CQ6a",
           "pertanyaan": "Apakah ada anggota keluarga (yang tinggal serumah), meninggal akibat COVID-19? (jawaban bisa lebih dari satu)",
           "pilihan": [
-            "Ya, Pasangan",
-            "Ya, Anak laki-laki",
-            "Ya, Anak perempuan",
-            "Ya, Menantu laki-laki",
-            "Ya, Menantu perempuan",
-            "Ya, Cucu",
-            "Ya, Kerabat termasuk saudara dari lansia",
+            "Ya, suami/istri",
+            "Ya, orang tua/mertua",
+            "Ya, anak laki-laki",
+            "Ya, anak perempuan",
+            "Ya, menantu laki-laki",
+            "Ya, menantu perempuan",
+            "Ya, cucu",
+            "Ya, kerabat termasuk saudara dari lansia",
             "Tidak"
           ],
           "tipe": "checkbox",
@@ -350,13 +387,14 @@
           "kode": "CQ6b",
           "pertanyaan": "Apakah ada anggota keluarga (yang tinggal beda rumah), meninggal karena COVID-19? (jawaban bisa lebih dari satu)",
           "pilihan": [
-            "Ya, Pasangan",
-            "Ya, Anak laki-laki",
-            "Ya, Anak perempuan",
-            "Ya, Menantu laki-laki",
-            "Ya, Menantu perempuan",
-            "Ya, Cucu",
-            "Ya, Kerabat termasuk saudara dari lansia",
+            "Ya, suami/istri",
+            "Ya, orang tua/mertua",
+            "Ya, anak laki-laki",
+            "Ya, anak perempuan",
+            "Ya, menantu laki-laki",
+            "Ya, menantu perempuan",
+            "Ya, cucu",
+            "Ya, kerabat termasuk saudara dari lansia",
             "Tidak"
           ],
           "tipe": "checkbox",
@@ -365,7 +403,7 @@
         {
           "kode": "CQ6c",
           "pertanyaan": "Apakah ada teman atau tetangga yang meninggal akibat COVID-19? (jawaban bisa lebih dari satu)",
-          "pilihan": ["Ya, teman", "Ya, tetangga", "Tidak"],
+          "pilihan": ["Ya, teman", "Ya, tetangga", "Tidak", "Tidak Tahu"],
           "tipe": "checkbox",
           "visible": true
         },
@@ -445,7 +483,7 @@
       ]
     },
     {
-      "group": "Kesehatan",
+      "group": "Keterangan Terkait Kesehatan Secara Umum",
       "form": "formKesehatan",
       "items": [
         {
@@ -533,6 +571,13 @@
           "pertanyaan": "Dimensia/pikun",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "DQ3_9",
+          "pertanyaan": "Lainnya, sebutkan...",
+          "pilihan": [],
+          "tipe": "input",
           "visible": true
         },
         {
@@ -644,7 +689,7 @@
         },
         {
           "kode": "DQ4_s1",
-          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami kesulitan/gangguan berbicara dan atau memahami/berkomunikasi dengan orang lain?",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan dalam hal kesulitan/gangguan berbicara dan atau memahami/berkomunikasi dengan orang lain selama pandemi?",
           "pilihan": ["Ya, memburuk", "Ya, membaik", "Tidak ada perubahan"],
           "tipe": "radio",
           "visible": true
@@ -659,10 +704,11 @@
           "kode": "EQ1",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan dalam layanan kesehatan selama pandemi?",
           "pilihan": [
-            "Ya, penundaan atau pembatalan layanan kesehatan esensial (layanan esensial (layanan yang harus tersedia temasuk rujukan dan kedaruratan) yang diperlukan",
-            "Ya, penundaan atau pembatalan layanan kesehatan nonesensial (layanan yang tidak bersifat kedaruratan atau mengancam jiwa, misal untuk keperluan estetika/kecantikan) yang diperlukan",
-            "Ya, penundaan atau pembatalan layanan kesehatan primer yang mengutamakan upaya preventif dan dilakukan oleh tenaga kesehatan (puskesmas, klinik, dan Upaya Kesehatan Bersumberdaya Masyarakat/UKBM)",
-            "Tidak memerlukan layanan"
+            "Ya, penundaan atau pembatalan layanan kesehatan esensial (utama) yang diperlukan",
+            "Ya, penundaan atau pembatalan layanan kesehatan nonesensial yang diperlukan",
+            "Ya, penundaan atau pembatalan layanan kesehatan primer untuk upaya preventif dari tenaga kesehatan",
+            "Tidak ada penundaan atau pembatalan layanan kesehatan",
+            "Tidak memerlukan layanan kesehatan"
           ],
           "tipe": "radio",
           "visible": true
@@ -717,105 +763,112 @@
       "form": "formKesehatanJiwa",
       "items": [
         {
-          "kode": "FQ6_1",
+          "kode": "FQ1",
+          "pertanyaan": "Pilih jawaban yang sesuai dengan perasaan Bapak/Ibu (lansia) dalam satu minggu terakhir :",
+          "pilihan": [],
+          "tipe": "header",
+          "visible": true
+        },
+        {
+          "kode": "FQ1_1",
           "pertanyaan": "Apakah anda pada dasarnya puas dengan kehidupan anda?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_2",
+          "kode": "FQ1_2",
           "pertanyaan": "Apakah anda sudah meninggalkan banyak kegiatan dan minat/kesenangan anda?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_3",
+          "kode": "FQ1_3",
           "pertanyaan": "Apakah anda merasa kehidupan anda hampa?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_4",
+          "kode": "FQ1_4",
           "pertanyaan": "Apakah anda sering merasa bosan?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_5",
+          "kode": "FQ1_5",
           "pertanyaan": "Apakah anda bersemangat setiap saat?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_6",
+          "kode": "FQ1_6",
           "pertanyaan": "Apakah anda takut sesuatu yang buruk akan terjadi pada anda?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_7",
+          "kode": "FQ1_7",
           "pertanyaan": "Apakah anda merasa bahagia pada sebagian besar hidup anda?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_8",
+          "kode": "FQ1_8",
           "pertanyaan": "Apakah anda sering merasa tidak berdaya?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_9",
+          "kode": "FQ1_9",
           "pertanyaan": "Apakah anda lebih senang tinggal di rumah daripada pergi ke luar dan mengerjakan sesuatu hal yang baru?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_10",
+          "kode": "FQ1_10",
           "pertanyaan": "Apakah anda merasa mempunyai banyak masalah dengan daya ingat anda dibandingkan kebanyakan orang?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_11",
+          "kode": "FQ1_11",
           "pertanyaan": "Apakah menurut Anda, hidup anda sekarang ini menyenangkan?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_12",
+          "kode": "FQ1_12",
           "pertanyaan": "Apakah anda merasa tidak berharga seperti perasaan anda saat ini?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_13",
+          "kode": "FQ1_13",
           "pertanyaan": "Apakah anda merasa penuh semangat?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_14",
+          "kode": "FQ1_14",
           "pertanyaan": "Apakah anda merasa bahwa keadaan anda tidak ada harapan?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
-          "kode": "FQ6_15",
+          "kode": "FQ1_15",
           "pertanyaan": "Apakah anda pikir bahwa orang lain lebih baik keadaanya dari anda?",
           "pilihan": ["Ya", "Tidak"],
           "tipe": "radio",
@@ -824,9 +877,16 @@
       ]
     },
     {
-      "group": "Kesehatan Lain",
+      "group": "Keterangan Terkait Kesehatan Lainnya",
       "form": "formKesehatanLain",
       "items": [
+        {
+          "kode": "GQ1",
+          "pertanyaan": "Risiko Jatuh",
+          "pilihan": [],
+          "tipe": "header",
+          "visible": true
+        },
         {
           "kode": "GQ1a",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) pernah jatuh dalam 1 tahun terakhir?",
@@ -867,6 +927,13 @@
           "visible": true
         },
         {
+          "kode": "GQ2",
+          "pertanyaan": "Kebiasaan Merokok",
+          "pilihan": [],
+          "tipe": "header",
+          "visible": true
+        },
+        {
           "kode": "GQ2a",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) mempunyai kebiasaan mengunyah tembakau, merokok dengan pipa, merokok batang yang digulung atau rokok biasa?",
           "pilihan": [
@@ -879,13 +946,33 @@
           ],
           "tipe": "radio",
           "visible": true
+        },
+        {
+          "kode": "GQ2b",
+          "pertanyaan": "Jenis kebiasaan merokok yang paling sering dilakukan?",
+          "pilihan": [
+            "Mengunyah tembakau",
+            "Merokok dengan pipa",
+            "Melinting rokok",
+            "Merokok sigaret/cerutu",
+            "Merokok elektrik/vape"
+          ],
+          "tipe": "radio",
+          "visible": true
         }
       ]
     },
     {
-      "group": "Kondisi Sosial",
+      "group": "Keterangan Terkait Kondisi Sosial",
       "form": "formKondisiSosial",
       "items": [
+        {
+          "kode": "HQ1",
+          "pertanyaan": "Pertanyaan berikut adalah tentang perasaan Bapak/Ibu (lansia) terhadap berbagai aspek kehidupannya",
+          "pilihan": [],
+          "tipe": "header",
+          "visible": true
+        },
         {
           "kode": "HQ1a",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) sering merasa kehilangan pertemanan?",
@@ -909,7 +996,7 @@
         },
         {
           "kode": "HQ1d",
-          "pertanyaan": "Apa yang dilakukan selama pandemi COVID-19?",
+          "pertanyaan": "Apa kegiatan utama (paling sering) yang dilakukan selama pandemi COVID-19?",
           "pilihan": [
             "Meluangkan lebih banyak waktu untuk hobi dan aktivitas",
             "Menonton televisi",
@@ -949,7 +1036,7 @@
         },
         {
           "kode": "HQ4",
-          "pertanyaan": "Siapa yang memberikan dukungan sosial kepada Bapak/Ibu (lansia) selama pandemi COVID-19? (jawaban bisa lebih dari satu)",
+          "pertanyaan": "Siapa yang memberikan dukungan sosial (seperti pemberian perhatian, kasih sayang, layanan, nasehat) kepada Bapak/Ibu (lansia) selama pandemi COVID-19? (jawaban bisa lebih dari satu)",
           "pilihan": [
             "Anggota keluarga",
             "Kader",
@@ -983,16 +1070,17 @@
           "kode": "IQ1",
           "pertanyaan": "Apa status pekerjaan Bapak/Ibu (lansia) sebelum pandemi COVID-19?",
           "pilihan": [
-            "Berusaha sendiri",
-            "Berusaha dibantu buruh tidak tetap / buruh tidak dibayar",
-            "Berusaha dibantu butuh tetap / buruh dibayar",
-            "Buruh / karyawan / pegawai",
-            "Pekerja bebas",
-            "Pekerja keluarga atau tidak dibayar",
-            "Saya tidak bekerja karena sudah lama menderita penyakit, trauma atau disabilitas",
-            "Saya tidak bekerja (tidak mencari pekerjaan dan tidak bersedia untuk bekerja)",
-            "Saya tidak bekerja tapi sedang mencari pekerjaan dan bersedia bekerja",
-            "Saya sudah tidak bekerja / pensiun",
+            "Ya, berusaha sendiri",
+            "Ya, berusaha dibantu buruh tidak tetap / buruh tidak dibayar",
+            "Ya, berusaha dibantu butuh tetap / buruh dibayar",
+            "Ya, buruh / karyawan / pegawai",
+            "Ya, pekerja bebas",
+            "Ya, pekerja keluarga atau tidak dibayar",
+            "Tidak bekerja karena sudah lama menderita penyakit, trauma atau disabilitas",
+            "Tidak bekerja (tidak mencari pekerjaan dan tidak bersedia untuk bekerja)",
+            "Tidak bekerja tapi sedang mencari pekerjaan dan bersedia bekerja",
+            "Tidak bekerja / pensiun",
+            "Tidak bekerja / kehilangan pekerjaan / PHK",
             "Lainnya, sebutkan"
           ],
           "tipe": "radio & input",
@@ -1005,11 +1093,16 @@
             "Meningkat",
             "Tidak berubah",
             "Menurun tapi tidak kehilangan pekerjaan",
-            "Saya kehilangan pekerjaan / PHK",
-            "Saya pensiun sejak pandemi COVID-19",
-            "Saya tidak tahu"
+            "Tidak tahu"
           ],
           "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "IQ3",
+          "pertanyaan": "Bagaimana pandemi COVID-19 mempengaruhi penghasilan Bapak/Ibu (lansia)?",
+          "pilihan": [],
+          "tipe": "header",
           "visible": true
         },
         {
@@ -1073,6 +1166,12 @@
           "visible": true
         },
         {
+          "kode": "IQ4",
+          "pertanyaan": "Apabila PPKM diberlakukan kembali, apa yang mungkin terjadi pada kondisi keuangan Bapak/Ibu (lansia)?",
+          "tipe": "header",
+          "visible": true
+        },
+        {
           "kode": "IQ4a",
           "pertanyaan": "Sulit bagi saya dan keluarga untuk membiayai pengeluaran kebutuhan dasar (sandang, pangan, keperluan protokol kesehatan selama masa COVID-19 (masker/sabun cuci tangan/ face shield, hand sanitizer)",
           "pilihan": ["Ya", "Ragu-ragu", "Tidak"],
@@ -1084,6 +1183,12 @@
           "pertanyaan": "Sulit bagi saya dan keluarga untuk membayar tagihan bulanan (sewa rumah/listrik/air/cicilan, dll)",
           "pilihan": ["Ya", "Ragu-ragu", "Tidak"],
           "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "IQ5",
+          "pertanyaan": "Bantuan",
+          "tipe": "header",
           "visible": true
         },
         {
@@ -1110,34 +1215,58 @@
       ]
     },
     {
-      "group": "Observari kader terhadap responden pasca wawancara",
+      "group": "Observasi kader terhadap responden pasca wawancara",
       "form": "formObservasiResponden",
       "items": [
         {
           "kode": "OQ1",
           "pertanyaan": "Apakah anda merasa bahwa responden cukup kompeten secara mental untuk memberikan jawaban?",
-          "pilihan": ["Ya", "Agak", "Tidak juga", "Tidak", "Tidak yakin"],
+          "pilihan": [
+            "Sangat Baik",
+            "Baik",
+            "Kurang Baik",
+            "Tidak Baik",
+            "Tidak Yakin"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "OQ2",
           "pertanyaan": "Apakah anda merasa bahwa tanggapan responden sebagian besar akurat?",
-          "pilihan": ["Ya", "Agak", "Tidak juga", "Tidak", "Tidak yakin"],
+          "pilihan": [
+            "Sangat Baik",
+            "Baik",
+            "Kurang Baik",
+            "Tidak Baik",
+            "Tidak Yakin"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "OQ3",
           "pertanyaan": "Apakah anda merasa responden mengerti pertanyaan yang diajukan?",
-          "pilihan": ["Ya", "Agak", "Tidak juga", "Tidak", "Tidak yakin"],
+          "pilihan": [
+            "Sangat Baik",
+            "Baik",
+            "Kurang Baik",
+            "Tidak Baik",
+            "Tidak Yakin"
+          ],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "OQ4",
           "pertanyaan": "Apakah anda merasa responden menanggapi dengan baik dan menikmati wawancara?",
-          "pilihan": ["Ya", "Agak", "Tidak juga", "Tidak", "Tidak yakin"],
+          "pilihan": [
+            "Sangat Baik",
+            "Baik",
+            "Kurang Baik",
+            "Tidak Baik",
+            "Tidak Yakin"
+          ],
           "tipe": "radio",
           "visible": true
         },
@@ -1145,11 +1274,59 @@
           "kode": "OQ5",
           "pertanyaan": "Apakah anda mengalami kesulitan mewawancarai responden yang mempunyai gangguan pendengaran?",
           "pilihan": [
-            "Tidak",
+            "Tidak mempunyai gangguan pendengaran",
+            "Tidak mengalami kesulitan",
             "Ya, tetapi gangguan pendengaran tidak mempengaruhi wawancara",
             "Ya, gangguan pendengaran mempengaruhi wawancara"
           ],
           "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "OQ6",
+          "pertanyaan": "Hasil wawancara",
+          "pilihan": [
+            "Terisi lengkap",
+            "Terisi tidak lengkap",
+            "Tidak ada ART/responden yang dapat memberi jawaban sampai akhir masa pencacahan",
+            "Responden menolak",
+            "Rumah tangga pindah/bangunan rumah sudah tidak ada"
+          ],
+          "tipe": "radio",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "group": "Keterangan Wawancara",
+      "form": "formWawancara",
+      "items": [
+        {
+          "kode": "Q5a",
+          "pertanyaan": "Nama Kader Pewawancara",
+          "pilihan": [],
+          "tipe": "input",
+          "visible": true
+        },
+        {
+          "kode": "Q5b",
+          "pertanyaan": "Nomor HP Kader Pewawancara",
+          "pilihan": [],
+          "tipe": "input angka",
+          "visible": true
+        },
+        {
+          "kode": "Q6a",
+          "pertanyaan": "Nama Supervisor",
+          "pilihan": [],
+          "tipe": "input",
+          "visible": true
+        },
+        {
+          "kode": "Q6b",
+          "pertanyaan": "Nomor HP Supervisor",
+          "pilihan": [],
+          "tipe": "input angka",
           "visible": true
         }
       ]
