@@ -133,6 +133,13 @@
           "pilihan": [],
           "tipe": "input",
           "visible": true
+        },
+        {
+          "kode": "KT7",
+          "pertanyaan": "Nomor Urut Sampel Keluarga Lansia",
+          "pilihan": [],
+          "tipe": "input angka",
+          "visible": true
         }
       ]
     },
@@ -199,7 +206,16 @@
         {
           "kode": "BQ8",
           "pertanyaan": "Pendidikan",
-          "pilihan": ["SD", "SMP", "SMA", "PERGURUAN TINGGI", "TIDAK SEKOLAH"],
+          "pilihan": [
+            "SD sederajat",
+            "SMP sederajat",
+            "SMA sederajat",
+            "DIPLOMA I/II/III",
+            "S1",
+            "S2",
+            "S3",
+            "TIDAK SEKOLAH"
+          ],
           "tipe": "radio",
           "visible": true
         },
@@ -213,8 +229,14 @@
         {
           "kode": "BQ10",
           "pertanyaan": "Kepemilikan Rumah",
-          "pilihan": ["Milik Sendiri", "Kontrak", "Lainnya"],
-          "tipe": "radio",
+          "pilihan": [
+            "Milik Sendiri",
+            "Kontrak/Sewa",
+            "Bebas Sewa",
+            "Dinas",
+            "Lainnya, sebutkan"
+          ],
+          "tipe": "radio & input",
           "visible": true
         },
         {
@@ -688,8 +710,8 @@
           "visible": true
         },
         {
-          "kode": "DQ4_s1",
-          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan dalam hal kesulitan/gangguan berbicara dan atau memahami/berkomunikasi dengan orang lain selama pandemi?",
+          "kode": "DQ4f_s",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami kesulitan/gangguan berbicara dan atau memahami /berkomunikasi dengan orang lain?",
           "pilihan": ["Ya, memburuk", "Ya, membaik", "Tidak ada perubahan"],
           "tipe": "radio",
           "visible": true
@@ -704,9 +726,9 @@
           "kode": "EQ1",
           "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan dalam layanan kesehatan selama pandemi?",
           "pilihan": [
-            "Ya, penundaan atau pembatalan layanan kesehatan esensial (utama) yang diperlukan",
-            "Ya, penundaan atau pembatalan layanan kesehatan nonesensial yang diperlukan",
-            "Ya, penundaan atau pembatalan layanan kesehatan primer untuk upaya preventif dari tenaga kesehatan",
+            "Ya, penundaan atau pembatalan layanan kesehatan <b>esensial</b> (utama) yang diperlukan",
+            "Ya, penundaan atau pembatalan layanan kesehatan <b>nonesensial</b> yang diperlukan",
+            "Ya, penundaan atau pembatalan layanan <b>kesehatanprimer</b> untuk upaya preventif dari tenaga kesehatan",
             "Tidak ada penundaan atau pembatalan layanan kesehatan",
             "Tidak memerlukan layanan kesehatan"
           ],
@@ -1173,14 +1195,14 @@
         },
         {
           "kode": "IQ4a",
-          "pertanyaan": "Sulit bagi saya dan keluarga untuk membiayai pengeluaran kebutuhan dasar (sandang, pangan, keperluan protokol kesehatan selama masa COVID-19 (masker/sabun cuci tangan/ face shield, hand sanitizer)",
+          "pertanyaan": "Apakah ada kesulitan bagi Bapak/Ibu (lansia) dan keluarga untuk membiayai pengeluaran kebutuhan dasar (sandang, pangan, dan keperluan protokol kesehatan selama pandemi COVID-19 (masker/sabun cuci tangan/ face shield, hand sanitizer)?",
           "pilihan": ["Ya", "Ragu-ragu", "Tidak"],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "IQ4b",
-          "pertanyaan": "Sulit bagi saya dan keluarga untuk membayar tagihan bulanan (sewa rumah/listrik/air/cicilan, dll)",
+          "pertanyaan": "Apakah ada kesulitan bagi Bapak/Ibu (lansia) dan keluarga untuk membayar sewa rumah dan tagihan bulanan?",
           "pilihan": ["Ya", "Ragu-ragu", "Tidak"],
           "tipe": "radio",
           "visible": true
