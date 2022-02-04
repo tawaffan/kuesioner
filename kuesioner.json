@@ -20,9 +20,13 @@
         },
         {
           "kode": "Q3",
-          "pertanyaan": "Alasan tidak bersedia, sebutkan",
-          "pilihan": [],
-          "tipe": "input",
+          "pertanyaan": "Apa alasan tidak bersedia diwawancarai?",
+          "pilihan": [
+            "Lansia tidak ingin berpartisipasi",
+            "Keluarga lansia tidak mengizinkan lansia berpartisipasi",
+            "Lainnya, sebutkan..."
+          ],
+          "tipe": "radio & input",
           "visible": true
         },
         {
@@ -138,7 +142,7 @@
           "kode": "KT7",
           "pertanyaan": "Nomor Urut Sampel Keluarga Lansia",
           "pilihan": [],
-          "tipe": "input angka",
+          "tipe": "select nomor",
           "visible": true
         }
       ]
@@ -272,9 +276,7 @@
             "Anak Kandung / Tiri",
             "Anak Angkat",
             "Menantu",
-            "Cucu",
             "Orang Tua / Mertua",
-            "Pembantu / Sopir",
             "Lainnya (keluarga lain (adik, kakak, bibi, paman), orang yang tidak ada hubungan keluarga dengan KRT)"
           ],
           "tipe": "radio",
@@ -711,7 +713,7 @@
         },
         {
           "kode": "DQ4f_s",
-          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami kesulitan/gangguan berbicara dan atau memahami /berkomunikasi dengan orang lain?",
+          "pertanyaan": "Apakah Bapak/Ibu (lansia) mengalami perubahan kesulitan/gangguan berbicara dan atau memahami /berkomunikasi dengan orang lain?",
           "pilihan": ["Ya, memburuk", "Ya, membaik", "Tidak ada perubahan"],
           "tipe": "radio",
           "visible": true
@@ -997,14 +999,14 @@
         },
         {
           "kode": "HQ1a",
-          "pertanyaan": "Apakah Bapak/Ibu (lansia) sering merasa kehilangan pertemanan?",
+          "pertanyaan": "Seberapa sering Bapak/Ibu (lansia) merasa kurang persahabatan?",
           "pilihan": ["Tidak pernah", "Kadang-kadang", "Sering"],
           "tipe": "radio",
           "visible": true
         },
         {
           "kode": "HQ1b",
-          "pertanyaan": "Apakah Bapak/Ibu (lansia) sering merasa dikucilkan?",
+          "pertanyaan": "Seberapa sering Bapak/Ibu (lansia) merasa ditinggalkan?",
           "pilihan": ["Tidak pernah", "Kadang-kadang", "Sering"],
           "tipe": "radio",
           "visible": true
@@ -1018,7 +1020,7 @@
         },
         {
           "kode": "HQ1d",
-          "pertanyaan": "Apa kegiatan utama (paling sering) yang dilakukan selama pandemi COVID-19?",
+          "pertanyaan": "Apa kegiatan utama (paling sering) dilakukan Bapak/Ibu (lansia) untuk mengatasi perasaan tersebut di atas (kesepian, ditinggalkan dan terisolasi) selama pandemi COVID-19",
           "pilihan": [
             "Meluangkan lebih banyak waktu untuk hobi dan aktivitas",
             "Menonton televisi",
@@ -1092,16 +1094,17 @@
           "kode": "IQ1",
           "pertanyaan": "Apa status pekerjaan Bapak/Ibu (lansia) sebelum pandemi COVID-19?",
           "pilihan": [
-            "Ya, berusaha sendiri",
-            "Ya, berusaha dibantu buruh tidak tetap / buruh tidak dibayar",
-            "Ya, berusaha dibantu butuh tetap / buruh dibayar",
-            "Ya, buruh / karyawan / pegawai",
-            "Ya, pekerja bebas",
-            "Ya, pekerja keluarga atau tidak dibayar",
+            "Berusaha sendiri",
+            "Berusaha dibantu buruh tidak tetap / buruh tidak dibayar",
+            "Berusaha dibantu butuh tetap / buruh dibayar",
+            "Buruh / karyawan / pegawai",
+            "Pekerja bebas",
+            "Pekerja keluarga atau tidak dibayar",
             "Tidak bekerja karena sudah lama menderita penyakit, trauma atau disabilitas",
             "Tidak bekerja (tidak mencari pekerjaan dan tidak bersedia untuk bekerja)",
             "Tidak bekerja tapi sedang mencari pekerjaan dan bersedia bekerja",
-            "Tidak bekerja / pensiun",
+            "Tidak bekerja dengan pensiun",
+            "Tidak bekerja tanpa pensiun",
             "Tidak bekerja / kehilangan pekerjaan / PHK",
             "Lainnya, sebutkan"
           ],
@@ -1115,6 +1118,7 @@
             "Meningkat",
             "Tidak berubah",
             "Menurun tapi tidak kehilangan pekerjaan",
+            "Tidak Bekerja",
             "Tidak tahu"
           ],
           "tipe": "radio",
@@ -1183,6 +1187,32 @@
             "Tidak berubah",
             "Menurun",
             "Tidak mempunyai dukungan berupa uang atau barang dari organisasi non-pemerintah"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "IQ3f",
+          "pertanyaan": "Terkait pendapatan dan pengeluaran rumah tangga <b>SEBELUM COVID-19</b>, bagaimana kondisinya menurut Bapak/Ibu (Lansia)?",
+          "pilihan": [
+            "Cukup (pendapatan), dan masih ada sisa uang",
+            "Cukup untuk memenuhi pengeluaran, tanpa kesulitan",
+            "Sedikit kesulitan dalam memenuhi pengeluaran",
+            "Banyak kesulitan dalam memenuhi pengeluaran",
+            "Tidak tahu"
+          ],
+          "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "IQ3g",
+          "pertanyaan": "Terkait pendapatan dan pengeluaran rumah tangga <b>SAAT INI</b>, bagaimana kondisinya menurut Bapak/Ibu (Lansia)?",
+          "pilihan": [
+            "Cukup (pendapatan), dan masih ada sisa uang",
+            "Cukup untuk memenuhi pengeluaran, tanpa kesulitan",
+            "Sedikit kesulitan dalam memenuhi pengeluaran",
+            "Banyak kesulitan dalam memenuhi pengeluaran",
+            "Tidak tahu"
           ],
           "tipe": "radio",
           "visible": true
@@ -1312,9 +1342,17 @@
             "Terisi tidak lengkap",
             "Tidak ada ART/responden yang dapat memberi jawaban sampai akhir masa pencacahan",
             "Responden menolak",
-            "Rumah tangga pindah/bangunan rumah sudah tidak ada"
+            "Rumah tangga pindah/bangunan rumah sudah tidak ada",
+            "Responden meninggal dunia"
           ],
           "tipe": "radio",
+          "visible": true
+        },
+        {
+          "kode": "OQ7",
+          "pertanyaan": "Catatan Pewawancara",
+          "pilihan": [],
+          "tipe": "input",
           "visible": true
         }
       ]
